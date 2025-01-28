@@ -3,6 +3,7 @@ node_js:
   - "22"
 before_install:
   - npm cache clean --force
+  - sudo chown -R $USER:$GROUP ~/.NPM
 script:
   - npm install
   - npm test
